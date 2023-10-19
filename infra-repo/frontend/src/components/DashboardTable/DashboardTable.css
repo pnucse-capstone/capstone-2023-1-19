@@ -1,0 +1,33 @@
+.dashboardTableContainer {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.dashboardTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboardTable th,
+.dashboardTable td {
+    border: 1px solid #e0e0e0;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.dashboardTable td {
+    font-weight: 550;
+}
+
+.dashboardTable th {
+    background-color: #f7f7f7;
+    font-weight: 900;
+}
+
+.dashboardTable tbody tr:hover {
+    background-color: #e3ddfc;
+}
+
+.details {
+    font-size: 1rem;
+}

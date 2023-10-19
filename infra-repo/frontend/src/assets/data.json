@@ -1,0 +1,7 @@
+[
+  { "id": 1, "model": "Tesla Model S", "period": "2023-06-28", "mileage": 10000, "price": 40000, "seller": "John" },
+  { "id": 5, "model": "Tesla Model S", "period": "2023-07-06", "mileage": 10000, "price": 30000, "seller": "John" },
+  { "id": 15, "model": "Tesla Model S", "period": "2023-02-17", "mileage": 100000, "price": 25000, "seller": "Emma" },
+  { "id": 28, "model": "Tesla Model S", "period": "2023-07-01", "mileage": 125000, "price": 25000, "seller": "Benjamin" },
+  { "id": 5, "model": "Tesla Model S", "period": "2023-07-06", "mileage": 10000, "price": 30000, "seller": "John" }
+]

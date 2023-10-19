@@ -1,0 +1,17 @@
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 5%;
+    border: 3px solid #05486e;
+}
+
+.slick-slide {
+    height: 100%;
+}
+
+.slick-slide img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
