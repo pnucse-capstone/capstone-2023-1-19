@@ -39,8 +39,45 @@
 
 ### 5. 설치 및 사용법
 
-본 프로젝트는 Ubuntu 20.04 버전에서 개발되었으며 함께 포함된 다음의 스크립트를 수행하여 
-관련 패키지들의 설치와 빌드를 수행할 수 있습니다.
+
+
+
+### 블록체인(HyperledgerFabric)
+---
+
+#### 0. Dependencies
+|Name|Version|
+|----|-------:|
+|OS|Ubuntu 20.04|
+|Go|1.18.9|
+|Hyperledger Fabric|2.4.7|
+|Hyperledger Fabric-CA|1.5.7|
+|Docker|24.0.6|
+|Docker Compose|1.28.2|
+
+#### 1. 프로젝트 파일 준비
+``` shell
+$ git clone https://github.com/pnucse-capstone/Capstone-2023-1-19.git
+$ cd ./Capstone-2023-1-19/cloud_chain
 ```
-$ ./install_and_build.sh
+#### 2. 블록체인 네트워크 구동
+``` shell
+$ ./cloudchain.sh up -ca -s couchdb
+```
+#### 3. 채널 생성 및 채널 가입
+``` shell
+$ ./cloudchain.sh set
+```
+#### 4. 체인코드 설치
+``` shell
+$ ./cloudchain.sh install
+```
+#### 5. 체인코드 배포
+``` shell
+$ ./cloudchain.sh commit
+```
+#### 5. 인터페이스 서버 실행
+``` shell
+$ cd ../interface
+$ go run main.go
 ```
