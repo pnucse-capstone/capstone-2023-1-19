@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "requestDate": "2023-09-01",
+      "vehicleIdentificationNumber": "VIN12345",
+      "vehicleModelName": "모델 A",
+      "vehicleRegistrationNumber": "123-ABC",
+      "gearboxType": "자동",
+      "fuelUsed": "휘발유",
+      "mileage": 20000,
+      "color": "빨강",
+      "options": "에어컨, 네비게이션"
+    },
+    {
+      "id": 2,
+      "requestDate": "2023-09-02",
+      "vehicleIdentificationNumber": "VIN67890",
+      "vehicleModelName": "모델 B",
+      "vehicleRegistrationNumber": "456-DEF",
+      "gearboxType": "수동",
+      "fuelUsed": "경유",
+      "mileage": 30000,
+      "color": "파랑",
+      "options": "에어백, 크루즈 컨트롤"
+    },
+    {
+      "id": 3,
+      "requestDate": "2023-09-03",
+      "vehicleIdentificationNumber": "VIN54321",
+      "vehicleModelName": "모델 A",
+      "vehicleRegistrationNumber": "789-GHI",
+      "gearboxType": "자동",
+      "fuelUsed": "휘발유",
+      "mileage": 15000,
+      "color": "노랑",
+      "options": "에어컨, 네비게이션"
+    },
+    {
+      "id": 4,
+      "requestDate": "2023-09-04",
+      "vehicleIdentificationNumber": "VIN24680",
+      "vehicleModelName": "모델 C",
+      "vehicleRegistrationNumber": "101-JKL",
+      "gearboxType": "자동",
+      "fuelUsed": "전기",
+      "mileage": 10000,
+      "color": "초록",
+      "options": "에어컨, 전동 시트"
+    },
+    {
+      "id": 5,
+      "requestDate": "2023-09-05",
+      "vehicleIdentificationNumber": "VIN13579",
+      "vehicleModelName": "모델 B",
+      "vehicleRegistrationNumber": "202-MNO",
+      "gearboxType": "수동",
+      "fuelUsed": "휘발유",
+      "mileage": 25000,
+      "color": "빨강",
+      "options": "에어백, 네비게이션"
+    },
+    {
+      "id": 6,
+      "requestDate": "2023-09-06",
+      "vehicleIdentificationNumber": "VIN97531",
+      "vehicleModelName": "모델 A",
+      "vehicleRegistrationNumber": "303-PQR",
+      "gearboxType": "자동",
+      "fuelUsed": "휘발유",
+      "mileage": 18000,
+      "color": "파랑",
+      "options": "에어컨, 크루즈 컨트롤"
+    },
+    {
+      "id": 7,
+      "requestDate": "2023-09-07",
+      "vehicleIdentificationNumber": "VIN86420",
+      "vehicleModelName": "모델 C",
+      "vehicleRegistrationNumber": "404-STU",
+      "gearboxType": "자동",
+      "fuelUsed": "전기",
+      "mileage": 12000,
+      "color": "노랑",
+      "options": "에어백, 전동 시트"
+    },
+    {
+      "id": 8,
+      "requestDate": "2023-09-08",
+      "vehicleIdentificationNumber": "VIN12312",
+      "vehicleModelName": "모델 B",
+      "vehicleRegistrationNumber": "505-VWX",
+      "gearboxType": "수동",
+      "fuelUsed": "경유",
+      "mileage": 22000,
+      "color": "초록",
+      "options": "네비게이션, 크루즈 컨트롤"
+    },
+    {
+      "id": 9,
+      "requestDate": "2023-09-09",
+      "vehicleIdentificationNumber": "VIN45678",
+      "vehicleModelName": "모델 A",
+      "vehicleRegistrationNumber": "606-YZ0",
+      "gearboxType": "자동",
+      "fuelUsed": "휘발유",
+      "mileage": 17000,
+      "color": "빨강",
+      "options": "에어컨, 네비게이션"
+    },
+    {
+      "id": 10,
+      "requestDate": "2023-09-10",
+      "vehicleIdentificationNumber": "VIN78901",
+      "vehicleModelName": "모델 C",
+      "vehicleRegistrationNumber": "707-ABC",
+      "gearboxType": "자동",
+      "fuelUsed": "전기",
+      "mileage": 14000,
+      "color": "파랑",
+      "options": "에어백, 전동 시트"
+    }
+  ]
+  

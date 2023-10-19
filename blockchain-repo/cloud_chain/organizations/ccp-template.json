@@ -1,0 +1,61 @@
+{
+    "name": "test-network-${ORG}",
+    "version": "1.0.0",
+    "client": {
+        "organization": "${ORG}",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                }
+            }
+        }
+    },
+    "organizations": {
+        "${ORG}": {
+            "mspid": "${ORG}MSP",
+            "peers": [
+                "peer0.${ORG}.pnu.cse",
+                "peer1.${ORG}.pnu.cse"  
+            ],
+            "certificateAuthorities": [
+                "ca.${ORG}.pnu.cse"
+            ]
+        }
+    },
+    "peers": {
+        "peer0.${ORG}.pnu.cse": {
+            "url": "grpcs://localhost:${P0PORT}",
+            "tlsCACerts": {
+                "pem": "${PEERPEM}"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer0.${ORG}.pnu.cse",
+                "hostnameOverride": "peer0.${ORG}.pnu.cse"
+            }
+        },
+        "peer1.${ORG}.pnu.cse": {  
+            "url": "grpcs://localhost:${P1PORT}",
+            "tlsCACerts": {
+                "pem": "${PEER1PEM}"
+            },
+            "grpcOptions": {
+                "ssl-target-name-override": "peer1.${ORG}.pnu.cse",
+                "hostnameOverride": "peer1.${ORG}.pnu.cse"
+            }
+        }
+    },
+    "certificateAuthorities": {
+        "ca.${ORG}.pnu.cse": {
+            "url": "https://localhost:${CAPORT}",
+            "caName": "ca-${ORG}",
+            "tlsCACerts": {
+                "pem": ["${CAPEM}"]
+            },
+            "httpOptions": {
+                "verify": false
+            }
+        }
+    }
+}
+
