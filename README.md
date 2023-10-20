@@ -39,6 +39,109 @@
 
 ### 5. 설치 및 사용법
 
+### 인프라 관리 시스템
+
+#### 프론트(React)
+---
+인프라 관리 시스템의 프론트엔드 사이드는 React Framework를 기반으로 설계되었습니다.
+
+#### 1. Clone Project
+``` shell
+$ git clone https://github.com/pnucse-capstone/capstone-2023-1-19.git
+$ cd ./capstone-2023-1-19/infra-repo/frontend
+```
+#### 2. Install dependencies in package.json
+``` shell
+$ npm install
+```
+
+#### 3. Run Project
+``` shell
+$ npm run start
+```
+
+### 백엔드(Go)
+---
+인프라 관리 시스템의 백엔드 사이드는 Go Language를 기반으로 설계되었습니다.
+#### 0. Dependencies
+|Name|Version|
+|----|-------:|
+|Openstack|2023.2|
+|Go|1.21.3|
+|Docker|20.10.18|
+|Docker-Compose|3.8|
+|Jenkins|2.428|
+|Terraform|0.14|
+
+#### 1. Clone Project
+``` shell
+$ git clone https://github.com/pnucse-capstone/capstone-2023-1-19.git
+$ cd ./capstone-2023-1-19/infra-repo/backend
+```
+#### 2. Setup DB 
+``` shell
+$ docker-compose -d up
+```
+#### 3. Setup Pipeline
+> Jenkins Container 구동 후 "createCluster" 이름의 Pipeline을 생성합니다.
+```
+# 1. Jenkins Container 구동
+$ docker run --name jenkins -d -p 9090:8080 -v ~/jenkins:/var/jenkins_home -u root jenkins/jenkins:latest
+
+# 2. capstone-2023-1-19/infra-repo/JenkinsfileCreate 파일 이용 pipeline 생성
+```
+
+#### 3. Run Go 
+``` shell
+$ go run main.go
+```
+
+### 중고차 거래 시스템
+
+### 프론트(리액트)
+---
+중고차 거래 시스템의 프론트엔드 사이드는 React Framework를 기반으로 설계되었습니다.
+
+#### 1. Clone Project
+``` shell
+$ git clone https://github.com/pnucse-capstone/capstone-2023-1-19.git
+$ cd ./capstone-2023-1-19/front-repo
+```
+
+#### 2. Install dependencies in package.json
+``` shell
+$ npm install
+```
+
+#### 3. Run Project
+``` shell
+$ npm run start
+```
+### 백엔드(SpringBoot, CICD)
+---
+#### 0. Dependencies
+|Name|Version|
+|----|-------:|
+|Java|OpenJDK 11.0.15|
+|Springboot|2.7.1|
+|Docker|20.10.18|
+|kubernetes|1.24.0|
+
+#### 1. Clone project
+``` shell
+$ git clone https://github.com/pnucse-capstone/capstone-2023-1-19.git
+```
+
+#### 2. Deploy Manifests
+> Kubernetes의 Argocd를 사용해 중고차 거래 시스템 Manifests를 배포합니다.
+``` shell
+# capstone-2023-1-19/back-repo/manifests/app-of-apps 파일을 사용하여 중고차 거래 시스템을 배포
+```
+<img width="613" alt="image" src="https://github.com/pnucse-capstone/capstone-2023-1-19/assets/80397512/010cb2d7-58e5-4d7c-8830-6aebc25a483c">
+
+#### 3. Check your argoCD
+
+<img width="356" alt="image" src="https://github.com/pnucse-capstone/capstone-2023-1-19/assets/80397512/80c7d798-2c3c-43a1-bafa-978b23bc60fd">
 
 
 
