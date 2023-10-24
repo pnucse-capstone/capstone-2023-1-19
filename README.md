@@ -23,13 +23,13 @@
 
 ### 3. 시스템 구성도
 
-#### 클라우드 아키텍처
+#### 전체 구성도
 <img width="608" alt="스크린샷 2023-10-19 오후 8 31 32" src="https://github.com/pnucse-capstone/capstone-2023-1-19/assets/78259314/ee65ecda-835e-4c12-838b-1d4b69578233">
 
-#### 마이크로서비스 아키텍처
+#### 마이크로서비스 구성도
 <img width="470" alt="스크린샷 2023-10-19 오후 8 31 40" src="https://github.com/pnucse-capstone/capstone-2023-1-19/assets/78259314/008558a7-8710-43ff-92bb-c5b9610b3568">
 
-#### 블록체인 아키텍처
+#### 블록체인 구성도
 <img width="501" alt="스크린샷 2023-10-19 오후 8 31 49" src="https://github.com/pnucse-capstone/capstone-2023-1-19/assets/78259314/dfd7c2df-f8da-4781-b6a8-757c991553eb">
 
 
